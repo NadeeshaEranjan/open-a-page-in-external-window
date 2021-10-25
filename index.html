@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>open a page in external window</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	// Popup window code
+	function newPopup(url) {
+		popupWindow = window.open(
+			url,'popUpWindow','height=300,width=400,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+	}
+
+</script>
+<p>
+	<a href="JavaScript:newPopup('home.html');">Open a popup window</a>
+	<br>
+	<br>
+	<button onclick="newPopup('home.html');">Open a popup window</button>
+</p>
+
+</body>
+</html>
